@@ -16,3 +16,27 @@
   margin: 0;
   padding: 0;
 }
+
+#app {
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  margin: 2rem 0;
+}
+
+.video {
+  border: 2px solid black;
+  max-height: 350px;
+}
+
+.buttons {
+  margin: 2rem 0;
+}
+
+button {
+  margin: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}

@@ -57,7 +57,7 @@ const downloadRecording = () => {
   document.body.appendChild(downloadAnchor)
   downloadAnchor.style.display = "none"
   downloadAnchor.href = blobUrl
-  downloadAnchor.download = "screen-recording.webm"
+  downloadAnchor.download = `screen-recording-${new Date().toISOString()}.webm`
   downloadAnchor.click()
 
   window.URL.revokeObjectURL(blobUrl)

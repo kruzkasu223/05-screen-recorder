@@ -16,6 +16,29 @@
         <button disabled id="stop">Stop Recording</button>
         <button disabled id="download">Download Recording</button>
       </div>
+
+      <div class="video-type">
+        <p>Select Video Download Type</p>
+        <div class="radio-group">
+          <div>
+            <input
+              type="radio"
+              id="webm"
+              name="videoType"
+              value="webm"
+              checked
+            />
+            <label for="webm">.webm (recommended)</label>
+          </div>
+
+          <div>
+            <input type="radio" id="mp4" name="videoType" value="mp4" />
+            <label for="mp4">.mp4 (very very slow)</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="loading"><h1>Loading...</h1></div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
